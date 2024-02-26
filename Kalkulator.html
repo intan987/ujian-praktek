@@ -1,0 +1,85 @@
+<html>
+  <head></head>
+  <style>
+  body{
+    display:flex;
+    justify-content: center;
+    align-content:flex;
+    align-items: center;
+    background:#737CA1 ;
+  }
+    input[type="text"]{
+      padding: 20px 25px;
+      border:2px solid #000;
+      border-radius:5px;
+      font-size: 20px;
+      font-weight:bold;
+    }
+    input[type="button"]{
+      padding: 20px 20px;
+      width:80px;
+      height:80px;
+      text-align: center;
+      background: #767280;
+      color:#fff;
+      font-size: 18px;
+      font-weight:bold;
+      border:none;
+      border-radius:5px;
+    }
+    input[type="label"]{
+      height:80px;
+      width:80px;
+      text-align:center;
+      font-size:13px;
+      font-weight:bold;
+      background:#767280;
+      color:#fff;
+      border:none;
+      border-radius:5px;
+    }
+    
+  </style>
+  <body>
+    <form name="wan">
+      <table>
+        <input type="text" name="cal" readonly="">
+        <tr>
+          <td><input type="button" value="C" onClick="document.wan.cal.value=''"></td> <!-- Tombol Delete -->
+          <td><input type="label" value="BY INTAN" readonly=""></td>
+          <td><input type="label" value="^" onclick="document.wan.cal.value+='**'"></td> <!-- Tombol Perpangkatan -->
+          <td><input type="button" value=":" onClick="document.wan.cal.value+='/'"></td> <!-- Tombol Pembagian  --> 
+        </tr>
+        
+        <tr>
+          <td><input type="button" value="7" onClick="document.wan.cal.value+='7'"></td>
+          <td><input type="button" value="8" onClick="document.wan.cal.value+='8'"></td>
+          <td><input type="button" value="9" onClick="document.wan.cal.value+='9'"></td>
+          <td><input type="button" value="x" onClick="document.wan.cal.value+='*'"></td> <!-- Tombol Perkalian -->
+        </tr>
+        
+        <tr>
+          <td><input type="button" value="4" onClick="document.wan.cal.value+='4'"></td>
+          <td><input type="button" value="5" onClick="document.wan.cal.value+='5'"></td>
+          <td><input type="button" value="6" onClick="document.wan.cal.value+='6'"></td>
+          <td><input type="button" value="+" onClick="document.wan.cal.value+='+'"></td> <!-- Tombol Penjumlahan -->
+        </tr>
+        
+        <tr>
+          <td><input type="button" value="1" onClick="document.wan.cal.value+='1'"></td>
+          <td><input type="button" value="2" onClick="document.wan.cal.value+='2'"></td>
+          <td><input type="button" value="3" onClick="document.wan.cal.value+='3'"></td>
+          <td><input type="button" value="-" onClick="document.wan.cal.value+='-'"></td> <!-- Tombol Pengurangan -->
+        </tr>
+        
+        <tr>
+          <td><input type="button" value="." onClick="document.wan.cal.value+='.'"></td>
+          <td><input type="button" value="0" onClick="document.wan.cal.value+='0'"></td>
+          <td><input type="button" value="00" onClick="document.wan.cal.value+='00'"></td>
+          <td><input type="button" value="=" onClick="document.wan.cal.value=eval(wan.cal.value)"></td> <!-- Tombol Sama Dengan -->
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+</html>
